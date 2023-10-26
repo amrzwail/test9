@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.company</groupId>
   <artifactId>testactormapping</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <name>TestActorMapping</name>
   <properties>
     <bonita.runtime.version>7.15.1</bonita.runtime.version>
