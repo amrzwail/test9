@@ -1,0 +1,11 @@
+== Migration notes (July 10, 2024 at 10:58:48 PM EDT)
+
+=== Updates
+
+* `bonita.runtime.version` has been updated from `7.15.1` to `8.0.0`.
+* `bonita-project-maven-plugin.version` has been updated from `0.0.6` to `0.1.0`.
+* `com.company.model:bdm-client:jar:1.0.0` dependency has been replaced with `${project.groupId}:testactormapping-bdm-model:jar:${project.version}`.
+* The project layout has been changed in favor of a multi modules maven project. It means that files location inside the project have changed.  It is a technical change and will not impact the design usage in Bonita Studio.New maven modules and their respective `pom.xml` files are *reserved for internal Studio use*.
+* Project's Business Data Model is now build in its own maven module. While it does not impact the design usage, it can now be built and deployed independently from a Studio.  The BDM model dependency share the same `version` and `groupId` of the parent project. It is enforced by the format of the Bonita project and must not be changed.
+* `default_profile.xml` profile xml schema version has been updated.
+
